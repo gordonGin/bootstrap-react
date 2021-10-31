@@ -1,0 +1,44 @@
+.navbar {
+  &__container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    padding: 2rem;
+    align-items: center;
+
+   @include respond(medium) {
+     flex-wrap: wrap;
+    }
+
+
+  }
+
+  &__image {
+    display: flex;
+    flex: 0.05;
+    height: 5rem;
+  }
+
+  &__links {
+    display: flex;
+    flex: 0.7;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  &__link-items {
+    @include font1;
+
+    margin: 0 2rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__contact {
+    display: flex;
+    flex: 0.2;
+    justify-content: flex-end;
+    @include font1;
+  }
+}

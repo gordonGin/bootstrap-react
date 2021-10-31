@@ -1,1 +1,19 @@
+//Abstract
+@import  "abstract/mixins";
+@import "abstract/variables";
+
+//Components
 @import "components/app";
+@import "components/gallery";
+
+
+//layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/navbar";
+
+//Pages
+@import "pages/home";
+
+@import "base/reset";

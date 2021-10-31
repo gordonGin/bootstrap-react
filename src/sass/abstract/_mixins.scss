@@ -1,0 +1,53 @@
+@mixin respond($breakpoint) {
+  @if($breakpoint == medium) {
+    @media (max-width: 900px) {
+      @content
+    }
+  }
+    @if($breakpoint == small) {
+      @media (max-width: 600px) {
+        @content
+      }
+    }
+}
+
+@mixin font1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+@mixin font2 {
+  font-size: 2rem;
+  text-align: left;
+  color: #000000;
+}
+
+@mixin label1 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+};
+
+@mixin primaryBtn {
+  min-width: 10rem;
+  height: 2.1rem;
+  padding: 0.5rem;
+  background-color: #187ae5;
+  text-transform:uppercase;
+  transition: all 0.15s;
+  border: 1px solid #6dc3ea;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  &:hover {
+    border-color: grey;
+    background-color:$primaryColor;
+    color: black;
+  }
+};
+
+@mixin line1($color: red){
+  border: 1px solid $color;
+}
