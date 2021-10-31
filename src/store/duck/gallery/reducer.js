@@ -14,8 +14,6 @@ const galleryReducer = createSlice({
 			state.error = null;
 		},
 		setGalleryFailure: (state, action) => {
-			// eslint-disable-next-line no-debugger
-			debugger;
 			state.isLoading = false;
 			state.error = action.payload.message;
 		},

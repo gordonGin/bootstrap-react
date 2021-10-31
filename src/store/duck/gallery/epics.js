@@ -12,13 +12,9 @@ const fetchGalleryByKeyword = (searchTerm) => {
 		try {
 			const gallery = await Pictures.getPictures(searchTerm);
 			if (gallery) {
-				// eslint-disable-next-line no-debugger
-				debugger;
 				dispatch(setGallerySuccess(gallery.items));
 			}
 		} catch (error) {
-			// eslint-disable-next-line no-debugger
-			debugger;
 			dispatch(setGalleryFailure(error));
 		}
 	};
