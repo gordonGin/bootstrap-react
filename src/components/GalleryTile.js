@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
-import Picture from '../resources/images/paris.jpeg';
+import Picture from '../assets/images/paris.jpeg';
 
 function GalleryTile({ lineItem: { title, lccn } }) {
 	return (
